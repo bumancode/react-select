@@ -8,6 +8,7 @@ class Select extends React.Component {
   render(){
     return( 
         <p>Select component</p>
+        <p>Select component</p>
     	);
   }
 }
