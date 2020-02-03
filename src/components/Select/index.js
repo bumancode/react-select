@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './main.css';
 
 class Select extends React.Component {
   constructor(props){
@@ -7,10 +9,17 @@ class Select extends React.Component {
 
   render(){
     return( 
-        <p>Select component</p>
-        <p>Select component</p>
+        <input />
     	);
   }
 }
 
+Select.propTypes = {
+  label: PropTypes.string,
+  palceholer: PropTypes.string
+};
+Select.defaultProps = {
+  label: 'Select',
+  placeholder: 'Select'
+};
 export default Select;
